@@ -1,1 +1,1 @@
-# Advent-of-Code-2022-Swift
+Personal Advent of Code 2022 solution implementations 
