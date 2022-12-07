@@ -80,7 +80,8 @@ fileprivate class TreeEntry {
             if let existing = contents.directory(named: directoryName) {
                 return .init(entry: existing, parent: self)
             } else {
-                return .init(entry: .init(.directory(name: directoryName, contents: [])), parent: self)
+                let new = EntryRef(.directory(name: directoryName, contents: []))
+                return .init(entry: new, parent: self)
             }
         case .file(name: _, size: _):
             fatalError("tried to change directory from a file")
@@ -164,8 +165,18 @@ func day7() {
     }
     
     let allDirectories = root.entry.directories
-    let smallDirectories = allDirectories.filter { $0.entry.size <= 100_000 }
+    let smallDirectories = allDirectories.filter { $0.entry.size <= 100000 }
     let totalSizeOfSmallDirectories = smallDirectories.reduce(0) { $0 + $1.entry.size }
     
+    let totalDiskSize = 70000000
+    let updateSize = 30000000
+    let usedSize = root.entry.entry.size
+    let unusedSize = totalDiskSize - usedSize
+    let needsToFree = updateSize - unusedSize
+    
+    let deleteCandidates = allDirectories.filter { $0.entry.size >= needsToFree }
+    let smallestCandidateSize = deleteCandidates.map { $0.entry.size }.min()!
+    
     print("day7 part1 result: \(totalSizeOfSmallDirectories)") //1243729
+    print("day7 part2 result: \(smallestCandidateSize)") //4443914
 }
