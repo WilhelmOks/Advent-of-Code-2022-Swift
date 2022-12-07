@@ -10,6 +10,15 @@ import Foundation
 fileprivate enum FileSystemEntry {
     case directory(name: String, contents: [EntryRef])
     case file(name: String, size: Int)
+    
+    var size: Int {
+        switch self {
+        case .file(name: _, size: let size):
+            return size
+        case .directory(name: _, contents: let contents):
+            return contents.map { $0.entry.size }.reduce(0) { $0 + $1 }
+        }
+    }
 }
 
 /// class wrapper for FileSystemEntry to get reference semantics
@@ -18,6 +27,15 @@ fileprivate class EntryRef {
     
     init(_ entry: FileSystemEntry) {
         self.entry = entry
+    }
+    
+    var directories: [EntryRef] {
+        switch self.entry {
+        case .directory(name: _, contents: let contents):
+            return [self] + contents.flatMap { $0.directories }
+        case .file(name: _, size: _):
+            return []
+        }
     }
 }
 
@@ -145,5 +163,9 @@ func day7() {
         }
     }
     
-    print(root)
+    let allDirectories = root.entry.directories
+    let smallDirectories = allDirectories.filter { $0.entry.size <= 100_000 }
+    let totalSizeOfSmallDirectories = smallDirectories.reduce(0) { $0 + $1.entry.size }
+    
+    print("day7 part1 result: \(totalSizeOfSmallDirectories)") //1243729
 }
