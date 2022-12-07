@@ -15,6 +15,8 @@
 		0CB6019B293E246800C18F08 /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6019A293E246800C18F08 /* Day5.swift */; };
 		0CB601A5293F59A200C18F08 /* Input6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601A4293F59A200C18F08 /* Input6.swift */; };
 		0CB601A7293F59BD00C18F08 /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601A6293F59BD00C18F08 /* Day6.swift */; };
+		0CB601AA2940CD9700C18F08 /* Input7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601A92940CD9700C18F08 /* Input7.swift */; };
+		0CB601AC2940CE1500C18F08 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601AB2940CE1500C18F08 /* Day7.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,8 @@
 		0CB6019A293E246800C18F08 /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		0CB601A4293F59A200C18F08 /* Input6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Input6.swift; sourceTree = "<group>"; };
 		0CB601A6293F59BD00C18F08 /* Day6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
+		0CB601A92940CD9700C18F08 /* Input7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input7.swift; sourceTree = "<group>"; };
+		0CB601AB2940CE1500C18F08 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB601A4293F59A200C18F08 /* Input6.swift */,
+				0CB601A92940CD9700C18F08 /* Input7.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 				0CB60198293CF92000C18F08 /* Day4.swift */,
 				0CB6019A293E246800C18F08 /* Day5.swift */,
 				0CB601A6293F59BD00C18F08 /* Day6.swift */,
+				0CB601AB2940CE1500C18F08 /* Day7.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -162,6 +168,8 @@
 				0CB60199293CF92000C18F08 /* Day4.swift in Sources */,
 				0CB601A5293F59A200C18F08 /* Input6.swift in Sources */,
 				0CB60195293A49F700C18F08 /* Day2.swift in Sources */,
+				0CB601AA2940CD9700C18F08 /* Input7.swift in Sources */,
+				0CB601AC2940CE1500C18F08 /* Day7.swift in Sources */,
 				0CB60197293CE59B00C18F08 /* Day3.swift in Sources */,
 				0CB6019B293E246800C18F08 /* Day5.swift in Sources */,
 				0CB601792938DF6400C18F08 /* main.swift in Sources */,
