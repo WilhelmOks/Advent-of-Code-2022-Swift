@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Array2D<T> {
+fileprivate struct Array2D<T> {
     let width: Int
     let height: Int
     var values: [T]
