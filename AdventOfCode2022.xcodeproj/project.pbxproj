@@ -21,6 +21,8 @@
 		0CB601B02941F98700C18F08 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601AF2941F98700C18F08 /* Day8.swift */; };
 		0CB601B2294357A700C18F08 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B1294357A700C18F08 /* Day9.swift */; };
 		0CB601B4294357C600C18F08 /* Input9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B3294357C600C18F08 /* Input9.swift */; };
+		0CB601B62944898700C18F08 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B52944898700C18F08 /* Day10.swift */; };
+		0CB601B82944899E00C18F08 /* Input10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B72944899E00C18F08 /* Input10.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +53,8 @@
 		0CB601AF2941F98700C18F08 /* Day8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
 		0CB601B1294357A700C18F08 /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 		0CB601B3294357C600C18F08 /* Input9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input9.swift; sourceTree = "<group>"; };
+		0CB601B52944898700C18F08 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
+		0CB601B72944899E00C18F08 /* Input10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input10.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				0CB601A92940CD9700C18F08 /* Input7.swift */,
 				0CB601AD2941F54C00C18F08 /* Input8.swift */,
 				0CB601B3294357C600C18F08 /* Input9.swift */,
+				0CB601B72944899E00C18F08 /* Input10.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 				0CB601AB2940CE1500C18F08 /* Day7.swift */,
 				0CB601AF2941F98700C18F08 /* Day8.swift */,
 				0CB601B1294357A700C18F08 /* Day9.swift */,
+				0CB601B52944898700C18F08 /* Day10.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -180,9 +186,11 @@
 				0CB60199293CF92000C18F08 /* Day4.swift in Sources */,
 				0CB601A5293F59A200C18F08 /* Input6.swift in Sources */,
 				0CB60195293A49F700C18F08 /* Day2.swift in Sources */,
+				0CB601B62944898700C18F08 /* Day10.swift in Sources */,
 				0CB601AA2940CD9700C18F08 /* Input7.swift in Sources */,
 				0CB601AC2940CE1500C18F08 /* Day7.swift in Sources */,
 				0CB601B02941F98700C18F08 /* Day8.swift in Sources */,
+				0CB601B82944899E00C18F08 /* Input10.swift in Sources */,
 				0CB60197293CE59B00C18F08 /* Day3.swift in Sources */,
 				0CB601B2294357A700C18F08 /* Day9.swift in Sources */,
 				0CB601B4294357C600C18F08 /* Input9.swift in Sources */,
