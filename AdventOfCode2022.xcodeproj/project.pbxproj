@@ -23,6 +23,8 @@
 		0CB601B4294357C600C18F08 /* Input9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B3294357C600C18F08 /* Input9.swift */; };
 		0CB601B62944898700C18F08 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B52944898700C18F08 /* Day10.swift */; };
 		0CB601B82944899E00C18F08 /* Input10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B72944899E00C18F08 /* Input10.swift */; };
+		0CB601BA2946085800C18F08 /* Input11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601B92946085800C18F08 /* Input11.swift */; };
+		0CB601BC2946087E00C18F08 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB601BB2946087E00C18F08 /* Day11.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,8 @@
 		0CB601B3294357C600C18F08 /* Input9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input9.swift; sourceTree = "<group>"; };
 		0CB601B52944898700C18F08 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		0CB601B72944899E00C18F08 /* Input10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input10.swift; sourceTree = "<group>"; };
+		0CB601B92946085800C18F08 /* Input11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input11.swift; sourceTree = "<group>"; };
+		0CB601BB2946087E00C18F08 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				0CB601AD2941F54C00C18F08 /* Input8.swift */,
 				0CB601B3294357C600C18F08 /* Input9.swift */,
 				0CB601B72944899E00C18F08 /* Input10.swift */,
+				0CB601B92946085800C18F08 /* Input11.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				0CB601AF2941F98700C18F08 /* Day8.swift */,
 				0CB601B1294357A700C18F08 /* Day9.swift */,
 				0CB601B52944898700C18F08 /* Day10.swift */,
+				0CB601BB2946087E00C18F08 /* Day11.swift */,
 			);
 			path = Solutions;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			dependencies = (
 			);
 			name = AdventOfCode2022;
+			packageProductDependencies = (
+			);
 			productName = AdventOfCode2022;
 			productReference = 0CB601752938DF6400C18F08 /* AdventOfCode2022 */;
 			productType = "com.apple.product-type.tool";
@@ -167,6 +175,8 @@
 				Base,
 			);
 			mainGroup = 0CB6016C2938DF6400C18F08;
+			packageReferences = (
+			);
 			productRefGroup = 0CB601762938DF6400C18F08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,6 +198,8 @@
 				0CB60195293A49F700C18F08 /* Day2.swift in Sources */,
 				0CB601B62944898700C18F08 /* Day10.swift in Sources */,
 				0CB601AA2940CD9700C18F08 /* Input7.swift in Sources */,
+				0CB601BA2946085800C18F08 /* Input11.swift in Sources */,
+				0CB601BC2946087E00C18F08 /* Day11.swift in Sources */,
 				0CB601AC2940CE1500C18F08 /* Day7.swift in Sources */,
 				0CB601B02941F98700C18F08 /* Day8.swift in Sources */,
 				0CB601B82944899E00C18F08 /* Input10.swift in Sources */,
