@@ -7,19 +7,7 @@
 
 import Foundation
 
-fileprivate struct GridPosition: Hashable {
-    let x: Int
-    let y: Int
-    
-    func moving(direction: Direction) -> Self {
-        switch direction {
-        case .up:       return .init(x: x, y: y - 1)
-        case .down:     return .init(x: x, y: y + 1)
-        case .left:     return .init(x: x - 1, y: y)
-        case .right:    return .init(x: x + 1, y: y)
-        }
-    }
-    
+fileprivate extension GridPosition {
     func moving(towards: GridPosition) -> Self {
         if abs(self.x - towards.x) <= 1 && abs(self.y - towards.y) <= 1 {
             // Close enough. Doesn't need to move.
@@ -38,9 +26,7 @@ fileprivate struct GridPosition: Hashable {
     }
 }
 
-fileprivate enum Direction {
-    case up, down, left, right
-    
+fileprivate extension Direction {
     init?(from: String) {
         switch from {
         case "U": self = .up

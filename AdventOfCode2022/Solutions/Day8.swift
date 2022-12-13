@@ -7,33 +7,6 @@
 
 import Foundation
 
-fileprivate struct Array2D<T> {
-    let width: Int
-    let height: Int
-    var values: [T]
-    
-    init(width: Int, height: Int, initialValue: T) {
-        self.width = width
-        self.height = height
-        values = Array(repeating: initialValue, count: width * height)
-    }
-    
-    func isIndexValid(x: Int, y: Int) -> Bool {
-        x >= 0 && x < width && y >= 0 && y < height
-    }
-    
-    subscript(x: Int, y: Int) -> T {
-        get {
-            assert(isIndexValid(x: x, y: y), "Invalid index")
-            return values[y * width + x]
-        }
-        set {
-            assert(isIndexValid(x: x, y: y), "Invalid index")
-            values[y * width + x] = newValue
-        }
-    }
-}
-
 fileprivate func checkVisible(treeSizes: Array2D<Int>, x: Int, y: Int, directionX: Int, directionY: Int) -> Bool {
     let checkingSize = treeSizes[x, y]
     var x = x + directionX
